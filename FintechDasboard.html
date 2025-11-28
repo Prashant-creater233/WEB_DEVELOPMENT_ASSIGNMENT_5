@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* border: 2px solid black; */
+        }
+
+        .prn {
+            display: flex;
+            margin-left: 13%;
+            font-weight: bold;
+            margin-top: 10px;
+            color: blue;
+        }
+
+        .logo {
+            font-size: 28px;
+            margin-right: 37%;
+            font-weight: bold;
+            color: blue;
+
+        }
+
+        .c-nav {
+            margin-left: 10px;
+            padding: 0px 0px 0px 20px;
+            color: blue;
+
+        }
+
+        .c-nav1 {
+            margin-left: 10px;
+            padding: 0px 0px 0px 0px;
+            border-radius: 14px;
+            text-align: center;
+            background-color: blue;
+            color: white;
+            height: 27px;
+            width: 110px;
+            border: 1px solid blue;
+            border-radius: 13.5px
+        }
+
+        .box1 {
+            width: 100%;
+            height: 240px;
+            background-color: rgb(246, 248, 248);
+            margin-top: 1%;
+            display: flex;;
+        }
+
+        h1 {
+            color: blue;
+            padding-left: 20%;
+            padding-top: 11%;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: lightblue;
+            padding-left: 20%;
+            padding-top: 3%;
+        }
+
+        .cont {
+            display: flex;
+            color: white;
+        }
+        .box4{
+            border: 2px solid rgb(214, 210, 210);
+            width: 99.73%;
+            height: 60px;
+            justify-content: space-around;
+        }
+        .box5{
+            width: 100%;
+            height: 240px;
+            background-color: rgb(246, 248, 248);
+        }
+        h2{
+            color: blue;
+            padding-left: 30%;
+            padding-top: 3%;
+            font-weight: bold;
+            font-size: 30px;
+            
+        }
+        .cont2{
+            display: flex;
+            justify-content: space-around;
+        }
+        .box6{
+            height: 140px;
+            width: 300px;
+            border: 2px solid rgb(246, 248, 248);;
+            background-color: white;
+            border-radius: 22px;
+            box-shadow: inset 20px lightblue;
+        }
+        .box6:hover{
+            transform: scale(1.03);
+            transition: all;
+            cursor: pointer;
+        }
+
+        .box7{
+            height: 140px;
+            width: 300px;
+            border: 2px solid rgb(246, 248, 248);;
+            background-color: white;
+            border-radius: 22px;
+            box-shadow: inset 20px lightblue;
+            
+        }
+        .box8{
+            height: 140px;
+            width: 300px;
+            border: 2px solid rgb(246, 248, 248);;
+            background-color: white;
+            border-radius: 22px;
+            box-shadow: inset 20px lightblue;
+        }
+        .box9{
+            width: 100%;
+            height: 270px;
+            background-color: rgb(217, 236, 236);
+        }
+        .cont3{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2%;
+        }
+        .box10{
+            height: 140px;
+            width: 225px;
+            border: 2px solid rgb(246, 248, 248);;
+            background-color: white;
+            border-radius: 22px;
+            box-shadow: inset 20px lightblue;
+
+        }
+        .box11{
+            height: 140px;
+            width: 225px;
+            border: 2px solid rgb(246, 248, 248);;
+            background-color: white;
+            border-radius: 22px;
+            box-shadow: inset 20px lightblue;
+            
+        }
+        .box12{
+            height: 140px;
+            width: 225px;
+            border: 2px solid rgb(246, 248, 248);;
+            background-color: white;
+            border-radius: 22px;
+            box-shadow: inset 20px lightblue;
+        }
+        .box13{
+            width: 100%;
+            height: 180px;
+            background-color: rgb(246, 248, 248);
+        }
+        h6{
+            color: blue;
+            font-size: 28px;
+            padding-left: 50%;
+            padding-top: 4%;
+        }
+        .box14{
+            width: 100%;
+            height: 50rem;
+        }
+        .cont5{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .box15{
+            background-color: rgb(246, 248, 248);
+            height: 80px;
+            width: 300px;
+            margin-top: 2%;
+            border-radius: 40px;
+        }
+        .box16{
+            border: 2px solid blue;
+            height: 80px;
+            width: 300px;
+            margin-top: 2%;
+            border-radius: 40px
+        }
+        .cont7{
+            height: 60px;
+            width: 110px;
+            position: relative;
+            left: 10rem;
+            bottom: 8.5rem;
+        }
+        .cont8{
+            height: 55px;
+            width: 110px;
+            position: relative;
+            left: 17rem;
+            bottom: 9rem;
+        }
+        .cont9{
+            height: 50px;
+            width: 110px;
+            position: relative;
+            left: 25rem;
+            bottom: 9rem;
+        }
+        .cont10{
+            height: 50px;
+            width: 110px;
+            position: relative;
+            left: 29rem;
+            bottom: 9rem;
+        }
+        .cont21{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: 32rem;
+            bottom: 4.30rem;
+        
+        }
+        .cont11{
+            height: 80px;
+            width: 80px;
+            position: relative;
+            left: 7rem;
+        }
+        .cont12{
+            height: 50px;
+            width: 50px;
+            position: relative;
+            left: 8rem;
+            top: 1rem;
+        }
+        .cont13{
+            height: 50px;
+            width: 50px;
+            position: relative;
+            left: 8rem;
+            top: 1rem;
+        }
+        .cont14{
+            height: 50px;
+            width: 50px;
+            position: relative;
+            left: 5.5rem;
+            top: 1rem;
+        }
+        .cont15{
+            height: 50px;
+            width: 50px;
+            position: relative;
+            left: 5.5rem;
+            top: 1rem;
+
+        }
+        .cont16{
+            height: 50px;
+            width: 50px;
+            position: relative;
+            left: 6rem;
+            top: 1rem;
+
+        }
+        .box7:hover{
+            transform: scale(1.03);
+            transition: all;
+            cursor: pointer;
+        }
+        .box8:hover{
+            transform: scale(1.03);
+            transition: all;
+            cursor: pointer;
+        }
+        .cont7:hover{
+            transform: scale(1.03);
+            transition: all;
+            cursor: pointer;
+        }
+        .cont8:hover{
+            transform: scale(1.03);
+            transition: all;
+            cursor: pointer;
+        }
+        .cont9:hover{
+            transform: scale(1.03);
+            transition: all;
+            cursor: pointer;
+        }
+        .cont10:hover{
+           transform: scale(1.03);
+            transition: all;
+            cursor: pointer;
+        }
+        .cont21:hover{
+           transform: scale(1.03);
+            transition: all;
+            cursor: pointer;
+        }
+        .box10:hover{
+            transform: scale(1.03);
+            transition: all;
+            cursor: pointer;
+        }
+        .box11:hover{
+            transform: scale(1.03);
+            transition: all;
+            cursor: pointer;
+        }
+        .box12:hover{
+            transform: scale(1.03);
+            transition: all;
+            cursor: pointer;
+        }
+        button:hover{
+            transform: scale(1.03);
+            transition: all;
+            cursor: pointer;
+        }
+        .box15:hover{
+            transform: scale(1.03);
+            transition: all;
+            cursor: pointer;
+        }
+        .box16:hover{
+            transform: scale(1.03);
+            transition: all;
+            cursor: pointer;
+        }
+        .box3:hover{
+            cursor: pointer;
+        }
+        .cont22{
+            height: 450px;
+            width: 450px;
+            position: relative;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="prn">
+        <div class="logo">PayFlex</div>
+        <div class="c-nav">Home</div>
+        <div class="c-nav">Features</div>
+        <div class="c-nav">Pricing</div>
+        <div class="c-nav">Blog</div>
+        <div class="c-nav">Support</div>
+        <div class="c-nav">Contact</div>
+        <button class="c-nav1">Get Started</button>
+    </div>
+    <div class="box1">
+        <div class="box2">
+            <h1>Smart Payments. Simplified.</h1>
+            <h3>Seamless Financial operations for your <br>business</h3>
+            <div class="cont">
+                <button
+                    style="margin-left: 20%; background-color: blue; color: white;height: 27px;width: 130px;border: 1px solid blue;border-radius: 13.5px;margin-top: 3%;">Start
+                    Free Trail</button>
+                <button
+                    style="margin-left: 20%;background-color: white; color: blue;height: 27px;width: 130px;border: 1px solid blue;border-radius: 13.5px; margin-top: 3%;">See
+                    Demo
+                </button>
+            </div>
+        </div>
+        <div class="box3">
+            <img height="190px" width="400px" style="margin-left: 120%; margin-top: 5%; border-radius: 22px;"
+                src="https://as2.ftcdn.net/jpg/05/99/82/23/1000_F_599822334_6igCZZwboX9fJLWTq5zf20AnG8YzyhUL.jpg">
+        </div>
+    </div>
+    <div class="box4">
+        <img class="cont7" src="visa.svg" alt="">
+        <img class="cont8" src="gp.svg" alt="">
+        <img class="cont9" src="ver.png" alt="">
+        <img class="cont10" src="pay.png" alt="">
+        <img class="cont21" src="pl.svg" alt="">
+    </div>
+    <div class="box5">
+        <h2>Powerful Features for Modern Businesses</h2>
+        <div class="cont2">
+            <div class="box6"><img class="cont11" src="st.png" alt="">
+                <h4  style="color: black; text-align: center;font-weight: bold;;">Secure Transactions</h4>
+                <p style="color: gray;text-align: centre;padding-left: 3%;">End-to-end encryption and fraud detection <br>Keep your payments safe and compliant.</p>
+            </div>
+            <div class="box7"><img  class="cont12" src="api.png" alt="">
+                <h4 style="color: black; text-align: center;font-weight: bold;"><br>API Integrations</h4>
+                <p style="color: gray;text-align: centre;">Easily connect PayFlex with your exixting </p><p style="color: gray;margin-left: 14%;">tools and automate worflows.</p>
+            </div>
+            <div class="box8"><img  class="cont13" src="ma.png" alt="">
+                <h4 style="color: black; text-align: center;font-weight: bold;"><br>Mobile APP</h4>
+                <p style="color: gray;text-align: centre;">Manage payments and analytics on the go</p><p style="color: gray;margin-left: 14%;">with your intiutive mobile APP.</p>
+            </div>
+        </div>
+    </div>
+    <div class="box9">
+        <h2 style="margin-left: 12%;">How It Works</h2>
+        <div class="cont3">
+            <div class="box10"><img  class="cont14" src="sp.png" alt="">
+                <h5 style="color: black; text-align: center;font-weight: bold;font-size: 20px;"><br>Sign Up</h5>
+                <p style="color: gray;text-align: centre;margin-left: 11%;">Create your free PayFlex</p>
+                <p style="color: gray;text-align: centre;margin-left: 16%;">account in minutes</p>
+            </div>
+            <div class="box11"><img  class="cont15" src="api.png" alt="">
+                <h5 style="color: black; text-align: center;font-weight: bold;margin-left: 5%;font-size: 20px;"><br>Connect Accounts</h5>
+                <p style="color: gray;text-align: centre;margin-left: 8%;">Link your bank and business</p>
+                <p style="color: gray;text-align: centre;margin-left: 20%;">accounts securely</p>
+            </div>
+            <div class="box12"><img class="cont16" src="transaction.png" alt="">
+                <h5 style="color: black; text-align: center;font-weight: bold;margin-left: 2%;font-size: 20px;"><br>Start Transacting</h4>
+                <p style="color: gray;text-align: centre;margin-left: 11%;">Send, receive and manage</p>
+                <p style="color: gray;text-align: centre;margin-left: 16%;">payments effortlessely</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="box13">
+        <h6>Gain Insights with Real-Time Analytics</h6>
+        <p style="color: gray;margin-left: 50.5%;font-size: 17px;">visualize your cash flow, monitor transactions,<br>and makes data-driven decisions with our<br>advanced analytics dashboard</p>
+    </div>
+    <div class="box14"><div><img class="cont22" src="tech.png" alt=""></div>
+        <h4 style="font-size: 33px;color: blue;text-align: center;padding-top: 3%;">Simple, Transparent Pricing</h4>
+        <div class="cont5"><div class="box15"><h6 style="padding-top: 8%;font-weight: lighter;">Basic</h6></div>
+        <div class="box16"><h6 style="padding-top: 8%;font-weight: lighter;">Pro</h6></div></div>
+    </div>
+
+
+</body>
+
+</html>
